@@ -1,2 +1,2 @@
-#HTML Gallery Creator
+# HTML Gallery Creator
 Made in JavaFX
