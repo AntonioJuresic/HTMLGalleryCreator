@@ -33,6 +33,7 @@ public class SpremanjeKodaController {
     public void SaveFile(ActionEvent event) throws IOException {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("*.html", "*.html"));
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("*.php", "*.php"));
         File newFile = fileChooser.showSaveDialog(null);
 
         if (newFile != null) {

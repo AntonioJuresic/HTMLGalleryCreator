@@ -16,6 +16,7 @@ import javafx.scene.layout.BorderPane;
 public class DodavanjeAtributaController {
     static List<String> HTMLCodeArrayList = new ArrayList<>();
 
+    @FXML private TextField imgDestination;
     @FXML private TextField alt;
     @FXML private TextField width;
     @FXML private TextField height;
@@ -40,6 +41,7 @@ public class DodavanjeAtributaController {
         String exampleCode = "<img src=";
 
         exampleCode += "\"";
+        if(imgDestination.getText().isEmpty() == false)    exampleCode += imgDestination.getText() + "/";
         exampleCode += "IMAGE_NAME.jpg";
         exampleCode += "\"";
 
@@ -69,6 +71,7 @@ public class DodavanjeAtributaController {
             String currentCode = "<img src=";
 
             currentCode += "\"";
+            if(imgDestination.getText().isEmpty() == false)    currentCode += imgDestination.getText() + "/";
             currentCode += currentImageString;
             currentCode += "\"";
 
