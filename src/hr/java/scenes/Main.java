@@ -35,8 +35,11 @@ Main extends Application {
         Scene scene = new Scene(root);
 
         //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        primaryStage.setMinHeight(450);
+        primaryStage.setMinWidth(480);
+
         primaryStage.setScene(scene);
-        primaryStage.setTitle("HTML Gallery Creator, Alpha version 1");
+        primaryStage.setTitle("HTML Gallery Creator");
 
         //MAKIVA OBRUB PROZORA
         //primaryStage.initStyle(StageStyle.UNDECORATED);
